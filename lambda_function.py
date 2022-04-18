@@ -12,10 +12,7 @@ def lambda_handler(event, context):
  
     # sending get request and saving the response as response object
     res = requests.get(url = URL, params = PARAMS)
- 
-    # extracting data in json format
     data = res.json()
- 
  
     # extracting latitude, longitude and formatted address 
     # of the first matching location
