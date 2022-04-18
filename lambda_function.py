@@ -15,7 +15,6 @@ def lambda_handler(event, context):
     data = res.json()
  
     # extracting latitude, longitude and formatted address 
-    # of the first matching location
     latitude = data['results'][0]['geometry']['location']['lat']
     longitude = data['results'][0]['geometry']['location']['lng']
     formatted_address = data['results'][0]['formatted_address']
