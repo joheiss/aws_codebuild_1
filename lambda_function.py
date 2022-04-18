@@ -3,6 +3,7 @@ import boto3
 import requests
 
 def lambda_handler(event, context):
+    
     print(event)
     
     URL = "http://maps.googleapis.com/maps/api/geocode/json"
